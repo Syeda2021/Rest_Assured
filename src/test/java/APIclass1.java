@@ -12,6 +12,7 @@ public class APIclass1 {
     public void TTechPostCall() throws JsonProcessingException {
 
         RestAssured.baseURI="http://qa.taltektc.com/api/";
+
         EncoderConfig encoderConfig = RestAssured.config().getEncoderConfig()
                 .appendDefaultContentCharsetToContentTypeIfUndefined(false);
         RestAssured.config = RestAssured.config().encoderConfig(encoderConfig);
@@ -21,7 +22,7 @@ public class APIclass1 {
                 .body("{\n" +
                         "    \"firstName\" : \"Jhon\",\n" +
                         "    \"lastName\" : \"Doe\",\n" +
-                        "    \"email\"     : \"jhon.doe22@gmail.com\",\n" +
+                        "    \"email\"     : \"jhon.doe102@gmail.com\",\n" +
                         "    \"password\"  : \"123456\",\n" +
                         "    \"confirmPassword\"  : \"123456\",\n" +
                         "    \"dob\"       : {\n" +
