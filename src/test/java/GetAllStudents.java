@@ -31,7 +31,22 @@ public class GetAllStudents {
                 System.out.println(data.get(i).get("email"));
                 break;
             }
+
+//            if(firstName.equals("Shaabab")){
+//                System.out.println(data.get(i).get("email"));
+//                System.out.println(data.get(i).get("lastName"));
+//                System.out.println(data.get(i).get("dob"));
+//                System.out.println(data.get(i).get("gender"));
+//                System.out.println(data.get(i).get("agree"));
+//                break;
+//            }
+
+
+
+
         }
+
+
 
     }
 

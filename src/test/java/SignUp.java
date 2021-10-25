@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 
-public class APIclass1 {
+public class SignUp {
     @Test
     public void TTechPostCall() throws JsonProcessingException {
 
