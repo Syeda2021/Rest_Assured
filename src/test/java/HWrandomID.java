@@ -12,9 +12,10 @@ public class HWrandomID {
     String password;
     String n ;
     String tkn;
-    @Test
+
+     @Test
     public void hwID() throws JsonProcessingException {
-        Util util = new Util();
+        Utility util = new Utility();
         RestAssured.baseURI = "http://qa.taltektc.com/api/";
 
         EncoderConfig encoderConfig = RestAssured.config().getEncoderConfig()
@@ -115,6 +116,14 @@ public class HWrandomID {
                         "    \"agree\"     : true\n" +
                         "}\n")
                 .put("student/"+ n);
+//         .body(
+//                "    \"password\"  : \"1234577\",\n" +
+//                        "    \"confirmPassword\"  : \"1234577\"\n" +
+//                        "}")
+//                .patch("updatePassword/"+id);
+        //if you want to update PARTIAL UPDATE- U HAVE TO USE "patch" instead of "put"
+
+
 
         System.out.println(response.getStatusCode());
         //System.out.println(response.getBody().asString());
