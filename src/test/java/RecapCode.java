@@ -163,6 +163,7 @@ public class RecapCode {
         System.out.println(rest.getBody().asString());
         ObjectMapper map= new ObjectMapper();
         JsonNode js = map.readTree(rest.getBody().asString());
+        System.out.println(js);
 
     }
 
