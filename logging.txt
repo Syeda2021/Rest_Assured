@@ -1,0 +1,568 @@
+Request method:	POST
+Request URI:	http://qa.taltektc.com/api/signup
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Kris",
+    "lastName": "Bradtke",
+    "email": "Test2524@gmail.com",
+    "password": "Test99524",
+    "confirmPassword": "Test99524",
+    "dob": {
+        "year": 2011,
+        "month": 11,
+        "day": 15
+    },
+    "gender": "male",
+    "agree": true
+}
+HTTP/1.1 201 Created
+Date: Mon, 15 Nov 2021 05:41:44 GMT
+Server: Apache
+X-Powered-By: PHP/7.4.25
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Cache-control: no-store, max-age=0, no-cache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Keep-Alive: timeout=5, max=100
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=UTF-8
+
+{
+    "success": true,
+    "message": "Registration Success",
+    "id": "TTCuy0m2"
+}
+Request method:	GET
+Request URI:	http://qa.taltektc.com/api/student/TTCuy0m2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 15 Nov 2021 05:41:45 GMT
+Server: Apache
+X-Powered-By: PHP/7.4.25
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Cache-control: no-store, max-age=0, no-cache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Keep-Alive: timeout=5, max=100
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=UTF-8
+
+{
+    "status": 200,
+    "message": "Student Found",
+    "data": {
+        "firstName": "Kris",
+        "lastName": "Bradtke",
+        "studentId": "TTCuy0m2",
+        "email": "Test2524@gmail.com",
+        "gender": "male",
+        "dob": "2011-11-15",
+        "agree": true
+    }
+}
+Request method:	POST
+Request URI:	http://qa.taltektc.com/api/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "Test2524@gmail.com",
+    "password": "Test99524"
+}
+HTTP/1.1 200 OK
+Date: Mon, 15 Nov 2021 05:41:45 GMT
+Server: Apache
+X-Powered-By: PHP/7.4.25
+Cache-control: no-store, max-age=0, no-cache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Keep-Alive: timeout=5, max=100
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=UTF-8
+
+{
+    "success": true,
+    "status code": 200,
+    "message": "Login Success",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9xYS50YWx0ZWt0Yy5jb20iLCJhdWQiOiJUSEVfQVVESUVOQ0UiLCJpYXQiOjE2MzY5NTQ5MDUsIm5iZiI6MTYzNjk1NDkxNSwiZXhwIjoxNjM3MDQxMzA1LCJpc19hZG1pbiI6ZmFsc2UsImRhdGEiOnsiaWQiOiIzMSIsImZpcnN0X25hbWUiOiJLcmlzIiwibGFzdF9uYW1lIjoiQnJhZHRrZSIsImVtYWlsIjoiVGVzdDI1MjRAZ21haWwuY29tIiwic3R1ZGVudElkIjoiVFRDdXkwbTIifX0.kfmFP_INEq6tl360d8pTBE1MP0cb3jMr7GxAUT0QF6g"
+}
+Request method:	PUT
+Request URI:	http://qa.taltektc.com/api/student/TTCuy0m2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9xYS50YWx0ZWt0Yy5jb20iLCJhdWQiOiJUSEVfQVVESUVOQ0UiLCJpYXQiOjE2MzY5NTQ5MDUsIm5iZiI6MTYzNjk1NDkxNSwiZXhwIjoxNjM3MDQxMzA1LCJpc19hZG1pbiI6ZmFsc2UsImRhdGEiOnsiaWQiOiIzMSIsImZpcnN0X25hbWUiOiJLcmlzIiwibGFzdF9uYW1lIjoiQnJhZHRrZSIsImVtYWlsIjoiVGVzdDI1MjRAZ21haWwuY29tIiwic3R1ZGVudElkIjoiVFRDdXkwbTIifX0.kfmFP_INEq6tl360d8pTBE1MP0cb3jMr7GxAUT0QF6g
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Levi",
+    "lastName": "Pfeffer",
+    "email": "Test2524@gmail.com",
+    "dob": {
+        "year": 2013,
+        "month": 12,
+        "day": 31
+    },
+    "gender": "male",
+    "agree": true
+}
+HTTP/1.1 200 OK
+Date: Mon, 15 Nov 2021 05:41:45 GMT
+Server: Apache
+X-Powered-By: PHP/7.4.25
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Cache-control: no-store, max-age=0, no-cache
+Vary: Authorization
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Keep-Alive: timeout=5, max=100
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=UTF-8
+
+{
+    "success": true,
+    "message": "Update success"
+}
+Request method:	PATCH
+Request URI:	http://qa.taltektc.com/api/updatePassword/TTCuy0m2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9xYS50YWx0ZWt0Yy5jb20iLCJhdWQiOiJUSEVfQVVESUVOQ0UiLCJpYXQiOjE2MzY5NTQ5MDUsIm5iZiI6MTYzNjk1NDkxNSwiZXhwIjoxNjM3MDQxMzA1LCJpc19hZG1pbiI6ZmFsc2UsImRhdGEiOnsiaWQiOiIzMSIsImZpcnN0X25hbWUiOiJLcmlzIiwibGFzdF9uYW1lIjoiQnJhZHRrZSIsImVtYWlsIjoiVGVzdDI1MjRAZ21haWwuY29tIiwic3R1ZGVudElkIjoiVFRDdXkwbTIifX0.kfmFP_INEq6tl360d8pTBE1MP0cb3jMr7GxAUT0QF6g
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "Update11545",
+    "confirmPassword": "Update11545"
+}
+HTTP/1.1 200 OK
+Date: Mon, 15 Nov 2021 05:41:46 GMT
+Server: Apache
+X-Powered-By: PHP/7.4.25
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Cache-control: no-store, max-age=0, no-cache
+Vary: Authorization
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Keep-Alive: timeout=5, max=100
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=UTF-8
+
+{
+    "success": true,
+    "message": "Password update success"
+}
+Request method:	POST
+Request URI:	http://qa.taltektc.com/api/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "Test2524@gmail.com",
+    "password": "Update11545"
+}
+HTTP/1.1 200 OK
+Date: Mon, 15 Nov 2021 05:41:46 GMT
+Server: Apache
+X-Powered-By: PHP/7.4.25
+Cache-control: no-store, max-age=0, no-cache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Keep-Alive: timeout=5, max=100
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=UTF-8
+
+{
+    "success": true,
+    "status code": 200,
+    "message": "Login Success",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9xYS50YWx0ZWt0Yy5jb20iLCJhdWQiOiJUSEVfQVVESUVOQ0UiLCJpYXQiOjE2MzY5NTQ5MDYsIm5iZiI6MTYzNjk1NDkxNiwiZXhwIjoxNjM3MDQxMzA2LCJpc19hZG1pbiI6ZmFsc2UsImRhdGEiOnsiaWQiOiIzMSIsImZpcnN0X25hbWUiOiJMZXZpIiwibGFzdF9uYW1lIjoiUGZlZmZlciIsImVtYWlsIjoiVGVzdDI1MjRAZ21haWwuY29tIiwic3R1ZGVudElkIjoiVFRDdXkwbTIifX0.80wQ5OxIaJfS1a0e26QadkgRghiodkUyuwk57XBz00w"
+}
+Request method:	DELETE
+Request URI:	http://qa.taltektc.com/api/student/TTCuy0m2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9xYS50YWx0ZWt0Yy5jb20iLCJhdWQiOiJUSEVfQVVESUVOQ0UiLCJpYXQiOjE2MzY5NTQ5MDYsIm5iZiI6MTYzNjk1NDkxNiwiZXhwIjoxNjM3MDQxMzA2LCJpc19hZG1pbiI6ZmFsc2UsImRhdGEiOnsiaWQiOiIzMSIsImZpcnN0X25hbWUiOiJMZXZpIiwibGFzdF9uYW1lIjoiUGZlZmZlciIsImVtYWlsIjoiVGVzdDI1MjRAZ21haWwuY29tIiwic3R1ZGVudElkIjoiVFRDdXkwbTIifX0.80wQ5OxIaJfS1a0e26QadkgRghiodkUyuwk57XBz00w
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 15 Nov 2021 05:41:46 GMT
+Server: Apache
+X-Powered-By: PHP/7.4.25
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Cache-control: no-store, max-age=0, no-cache
+Vary: Authorization
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Keep-Alive: timeout=5, max=100
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=UTF-8
+
+{
+    "success": true,
+    "messages": "Data Deleted"
+}
+Request method:	GET
+Request URI:	http://qa.taltektc.com/api/student/TTCuy0m2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Mon, 15 Nov 2021 05:41:46 GMT
+Server: Apache
+X-Powered-By: PHP/7.4.25
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Cache-control: no-store, max-age=0, no-cache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Keep-Alive: timeout=5, max=100
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=UTF-8
+
+{
+    "status": 404,
+    "error": 404,
+    "messages": {
+        "error": "No Student Found with id TTCuy0m2"
+    }
+}
+Request method:	GET
+Request URI:	http://qa.taltektc.com/api/students
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 15 Nov 2021 05:41:46 GMT
+Server: Apache
+X-Powered-By: PHP/7.4.25
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Cache-control: no-store, max-age=0, no-cache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Keep-Alive: timeout=5, max=100
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=UTF-8
+
+{
+    "status": 200,
+    "message": "Students Found",
+    "data": [
+        {
+            "firstName": "TalentTEK",
+            "lastName": "Admin",
+            "studentId": "TTCwmkPW",
+            "email": "info@taltektc.com",
+            "gender": "male",
+            "dob": "1989-07-09",
+            "agree": true
+        },
+        {
+            "firstName": "Melissia",
+            "lastName": "Bogan",
+            "studentId": "TTCEipVA",
+            "email": "meghann.goldner@example.com",
+            "gender": "male",
+            "dob": "2008-01-25",
+            "agree": true
+        },
+        {
+            "firstName": "Vern",
+            "lastName": "Pacocha",
+            "studentId": "TTCRoSlT",
+            "email": "daniell.rohan@example.com",
+            "gender": "male",
+            "dob": "1987-01-14",
+            "agree": true
+        },
+        {
+            "firstName": "Robin",
+            "lastName": "Metz",
+            "studentId": "TTCLtYsl",
+            "email": "fritz.kautzer@example.com",
+            "gender": "male",
+            "dob": "1954-10-12",
+            "agree": true
+        },
+        {
+            "firstName": "Edna",
+            "lastName": "Hodkiewicz",
+            "studentId": "TTCgToqh",
+            "email": "ramiro.macejkovic@example.com",
+            "gender": "male",
+            "dob": "1940-02-23",
+            "agree": true
+        },
+        {
+            "firstName": "Sharla",
+            "lastName": "Goldner",
+            "studentId": "TTCRCGLW",
+            "email": "lucius.wisoky@example.com",
+            "gender": "male",
+            "dob": "1977-09-22",
+            "agree": true
+        },
+        {
+            "firstName": "Lourie",
+            "lastName": "Feest",
+            "studentId": "TTCk9cL2",
+            "email": "kindra.hane@example.com",
+            "gender": "male",
+            "dob": "1981-05-30",
+            "agree": true
+        },
+        {
+            "firstName": "dec",
+            "lastName": "test",
+            "studentId": "TTCLUr9t",
+            "email": "dec.test20@gmail.com",
+            "gender": "male",
+            "dob": "2013-12-31",
+            "agree": true
+        },
+        {
+            "firstName": "Jan",
+            "lastName": "Batch",
+            "studentId": "TTCI2GTp",
+            "email": "jan.bach20@gmail.com",
+            "gender": "male",
+            "dob": "2013-12-31",
+            "agree": true
+        },
+        {
+            "firstName": "OCT",
+            "lastName": "test",
+            "studentId": "TTCl97c8",
+            "email": "oct.test20@gmail.com",
+            "gender": "male",
+            "dob": "2013-12-31",
+            "agree": true
+        },
+        {
+            "firstName": "Bethel",
+            "lastName": "Gleichner",
+            "studentId": "TTCGa7Kg",
+            "email": "milagro.orn@example.com",
+            "gender": "female",
+            "dob": "1984-12-16",
+            "agree": true
+        },
+        {
+            "firstName": "Javier",
+            "lastName": "Kub",
+            "studentId": "TTCwMRGx",
+            "email": "keith.gulgowski@example.com",
+            "gender": "female",
+            "dob": "1984-12-16",
+            "agree": true
+        },
+        {
+            "firstName": "Brain",
+            "lastName": "Test",
+            "studentId": "TTCjuYwR",
+            "email": "Destin_Gibson@hotmail.com",
+            "gender": "female",
+            "dob": "1979-12-31",
+            "agree": true
+        },
+        {
+            "firstName": "Illias",
+            "lastName": "Kanchon",
+            "studentId": "TTC2mnM5",
+            "email": "illiaskanchon@yahoo.com",
+            "gender": "male",
+            "dob": "1990-03-15",
+            "agree": true
+        },
+        {
+            "firstName": "Fritz",
+            "lastName": "Sipes",
+            "studentId": "TTCUYrm3",
+            "email": "peter.ratke@example.com",
+            "gender": "male",
+            "dob": "1985-06-25",
+            "agree": true
+        },
+        {
+            "firstName": "Evelyn",
+            "lastName": "Marquardt",
+            "studentId": "TTCsU1Vg",
+            "email": "ted.goyette@example.com",
+            "gender": "male",
+            "dob": "1985-06-25",
+            "agree": true
+        },
+        {
+            "firstName": "dfsdfds",
+            "lastName": "sdfsdf",
+            "studentId": "TTCoFRPj",
+            "email": "sdfsdfasdhskh@yahoo.com",
+            "gender": "male",
+            "dob": "1990-01-01",
+            "agree": true
+        },
+        {
+            "firstName": "OCT",
+            "lastName": "test",
+            "studentId": "TTCZMqLB",
+            "email": "Courtney_Cremin@hotmail.com",
+            "gender": "male",
+            "dob": "2013-12-31",
+            "agree": true
+        },
+        {
+            "firstName": "Taina",
+            "lastName": "Reynolds",
+            "studentId": "TTCWNhDJ",
+            "email": "allen.leannon@example.com",
+            "gender": "male",
+            "dob": "1988-08-25",
+            "agree": true
+        },
+        {
+            "firstName": "Sol",
+            "lastName": "Schmitt",
+            "studentId": "TTCy2pR0",
+            "email": "sol.harris@example.com",
+            "gender": "male",
+            "dob": "1988-08-25",
+            "agree": true
+        },
+        {
+            "firstName": "Vance",
+            "lastName": "Grant",
+            "studentId": "TTCvGXYk",
+            "email": "dave.conroy@example.com",
+            "gender": "male",
+            "dob": "1988-08-25",
+            "agree": true
+        },
+        {
+            "firstName": "Sherell",
+            "lastName": "Romaguera",
+            "studentId": "TTCVfrOp",
+            "email": "mose.hand@example.com",
+            "gender": "male",
+            "dob": "1988-08-25",
+            "agree": true
+        },
+        {
+            "firstName": "Johnsie",
+            "lastName": "Green",
+            "studentId": "TTC6ozUR",
+            "email": "marilyn.klein@example.com",
+            "gender": "male",
+            "dob": "1988-08-25",
+            "agree": true
+        },
+        {
+            "firstName": "Devin",
+            "lastName": "Kihn",
+            "studentId": "TTC6s4NX",
+            "email": "noah.bins@example.com",
+            "gender": "male",
+            "dob": "1988-08-25",
+            "agree": true
+        },
+        {
+            "firstName": "Jame",
+            "lastName": "Murphy",
+            "studentId": "TTCOSAs6",
+            "email": "tanisha.kessler@example.com",
+            "gender": "male",
+            "dob": "1988-08-25",
+            "agree": true
+        },
+        {
+            "firstName": "Chang",
+            "lastName": "Harvey",
+            "studentId": "TTCxki3N",
+            "email": "candis.morissette@example.com",
+            "gender": "male",
+            "dob": "1988-08-25",
+            "agree": true
+        }
+    ]
+}
