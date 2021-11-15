@@ -16,7 +16,7 @@ public class RecapCode {
     @Test
     public void signupTTech() throws JsonProcessingException {
 
-        Utility util=new Utility();
+        Utility util= new Utility();
         RestAssured.baseURI="http://qa.taltektc.com/api/";
         EncoderConfig encoderConfig = RestAssured.config().getEncoderConfig()
                 .appendDefaultContentCharsetToContentTypeIfUndefined(false);
@@ -90,7 +90,8 @@ public class RecapCode {
     @Test(dependsOnMethods = "signupTTech")
     public void LoginTTech() throws JsonProcessingException {
 
-        Utility util=new Utility();
+        Utility util = new Utility();
+
         RestAssured.baseURI="http://qa.taltektc.com/api/";
         EncoderConfig encoderConfig = RestAssured.config().getEncoderConfig()
                 .appendDefaultContentCharsetToContentTypeIfUndefined(false);

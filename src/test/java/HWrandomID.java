@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import io.restassured.config.EncoderConfig;
 import io.restassured.response.Response;
+
 import org.testng.annotations.Test;
 
 public class HWrandomID {
@@ -43,7 +44,7 @@ public class HWrandomID {
 
     @Test (dependsOnMethods = "hwID")
     public void getStudent() throws JsonProcessingException {
-       // HWrandomID hd = new HWrandomID();
+
 
         RestAssured.baseURI = "http://qa.taltektc.com/api/";
         EncoderConfig encoderConfig = RestAssured.config().getEncoderConfig()

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TTech Regression">
+
+    <listeners>
+        <listener class-name="resourceS.Listeners"/>
+    </listeners>
+
+    <test name="TalentTech API Test">
+        <classes>
+            <class name="talentTek.TTechPostGetTest"/>
+            <class name="talentTek.TTechPutPatchTest"/>
+            <class name="talentTek.TTechPatchGetTest"/>
+            <class name="talentTek.TTechDeleteGetTest"/>
+            <class name="talentTek.TTechGetAllStudents"/>
+        </classes>
+    </test>
+
+</suite>
